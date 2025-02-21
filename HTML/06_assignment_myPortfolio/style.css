@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #EAE0D5;
+}
+
+/* -----------------------Header Section---------------------------- */
+
+header{
+    padding: 15px;
+    background: #C6AC8F;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
+    margin: 0 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 15px 35px;
+}
+
+nav ul li a{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+nav ul li a:hover{
+    color: #A48374;
+}
+
+/* ----------------------About Me Section------------------------- */
+
+main #aboutMe{
+    background: linear-gradient(to right, #5E503F, #22333B);
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 30px;
+    border-radius: 15px;
+    padding: 60px 9% 0;
+    align-items: center;
+    height: 80vh;
+}
+
+main #aboutMe .aboutMe h2{
+    font-size: 40px;
+}
+
+main #aboutMe .aboutMe p{
+    font-size: 20px;
+}
+
+main #aboutMe img{
+    background: #EAE0D5;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #22333B;
+}
+
+/* ----------------------My Project Section--------------------- */
+
+main #myProject{
+    background: linear-gradient(to bottom, #C6AC8F, #959d90) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    margin: 0;
+    border-bottom-style: solid;
+}
+
+main #myProject h2{
+    font-size: 40px;
+    text-align: center;
+    margin: 15px;
+}
+
+main #myProject table{
+    width: 60%;
+    border-collapse: collapse;
+    background: #CBAD8D;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+main #myProject table th, main #myProject table td {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+main #myProject table th{
+    background-color: #3A2D28;
+    color: white;
+    text-transform: uppercase;
+}
+
+main #myProject table tr:hover{
+    background-color: #A48374;
+}
+
+/* ----------------------Contact Section----------------------- */
+
+main #contact, main #dataPort, main #skills, main #feedback{
+    background: #959d90;
+}
+
+main #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #contact #details{
+    background: #3A2D28;
+    margin-bottom: 30px;
+    padding: 0 35px 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+main #contact h2{
+    margin: 15px;
+    font-size: 35px;
+    text-align: center;
+}
+
+main #contact #details label{
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: left;
+}
+
+main #contact #details input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+}
+
+main #contact #details #submitContact{
+    background: #CBAD8D;
+    margin-top: 15px;
+    padding: 10px;
+    width: 318px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+main #contact #details #submitContact:hover{
+    background-color: #A48374;
+}
+
+/* -----------------------Form Section------------------------ */
+
+main form fieldset{
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-color: #5E503F;
+    padding: 10px;
+}
+
+main form legend{
+    font-weight: 700;
+    font-size: 30px;
+    color: #5E503F;
+}
+
+main form label{
+    display: block;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+main form #feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+    margin: 15px;
+    font-size: 25px;
+}
+
+textarea{
+    width: 50%;
+    height: 20vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+}
+
+#submitComment{
+    margin: 10px 10px 50px 10px;
+    padding: 10px;
+    width: 10%;
+    background-color: #CBAD8D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submitComment:hover {
+    background-color: #A48374;
+}
+
+footer p{
+    text-align: center;
+    color: black;
+}

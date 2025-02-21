@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 350px;
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        #submitComment {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #submitComment:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <form>
+            <fieldset id="dataPort">
+                <legend>How did you hear about this portfolio?</legend>
+                <label><input type="radio" name="source" value="friend"> Friend</label>
+                <label><input type="radio" name="source" value="socMed"> Social Media</label>
+                <label><input type="radio" name="source" value="searchEng"> Search Engine</label>
+                <label><input type="radio" name="source" value="other"> Other</label>
+            </fieldset>
+
+            <fieldset id="skills">
+                <legend>Skills/Interests</legend>
+                <label><input type="checkbox" name="skills" value="webDev"> Web Development</label>
+                <label><input type="checkbox" name="skills" value="design"> Design</label>
+                <label><input type="checkbox" name="skills" value="photograph"> Photography</label>
+            </fieldset>
+
+            <section id="feedback">
+                <h3>Comments or Messages:</h3>
+                <textarea name="commentMessage" id="com_Message" rows="5" placeholder="Type your message here..."></textarea> 
+                <input id="submitComment" type="submit" name="submit" value="Submit">
+            </section>
+        </form>
+    </main>
+
+</body>
+</html>

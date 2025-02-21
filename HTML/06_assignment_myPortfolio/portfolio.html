@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
 </head>
+
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Welcome to My Portfolio.</h1>
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#myProject">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>About Me</h2>
-        <p>Hello! I'm Benedict, I am passionate to learn and improve my skills in Web Development. This portfolio showcases some of my work and interests.</p>
-        <img src="#" alt="myImage">
-        <section>
+        <section id="aboutMe">
+            <div class="aboutMe">
+                <h2>About Me.</h2>
+                <p>Hello! I'm Benedict, I am passionate to learn and improve my skills in Web Development.</p>
+                <p>This portfolio showcases some of my work and interests.</p>
+            </div>
+            <img src="myImage.png" alt="myImage">
+        </section>
+        <section id="myProject">
             <h2>My Projects</h2>
             <table>
                 <tr>
@@ -45,32 +53,43 @@
                 </tr>
             </table>
         </section>
-        <section>
+        <section id="contact">
             <h2>Contact Me</h2>
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email">
-        </section><br>
-        <fieldset>
-            <legend>How did you hear about this portfolio?</legend>
-            <input type="radio" name="friend"> Friend <br>
-            <input type="radio" name="socMed"> Social Media <br>
-            <input type="radio" name="searchEng"> Search Engine <br>
-            <input type="radio" name="other"> Other
-        </fieldset><br>
-        <fieldset>
-            <legend>Skills/Interests</legend>
-            <input type="checkbox" name="webDev"> Web Development <br>
-            <input type="checkbox" name="design"> Design <br>
-            <input type="checkbox" name="photograph"> Photography <br>
-        </fieldset><br>
-        <section>
-            <h3>Comments or Messages:</h3>
-            <textarea name="commentMessage" id="com_Message" rows="5" cols="40"></textarea><br>
-            <input type="submit" name="submit">
+            <div id="details">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+                <input id="submitContact" type="submit" name="submit">
+            </div>
         </section>
+        <form>
+            <fieldset id="dataPort">
+                <legend>How did you hear about this portfolio?</legend>
+                <label><input type="radio" name="source" value="friend"> Friend</label>
+                <label><input type="radio" name="source" value="socMed"> Social Media</label>
+                <label><input type="radio" name="source" value="searchEng"> Search Engine</label>
+                <label><input type="radio" name="source" value="other"> Other</label>
+            </fieldset>
+
+            <fieldset id="skills">
+                <legend>Skills/Interests</legend>
+                <label><input type="checkbox" name="skills" value="webDev"> Web Development</label>
+                <label><input type="checkbox" name="skills" value="design"> Design</label>
+                <label><input type="checkbox" name="skills" value="photograph"> Photography</label>
+            </fieldset>
+
+            <section id="feedback">
+                <h3>Comments or Messages:</h3>
+                <textarea name="commentMessage" id="com_Message" rows="5"
+                    placeholder="Type your message here..."></textarea>
+                <input id="submitComment" type="submit" name="submit" value="Submit">
+            </section>
+        </form>
     </main>
-    <footer><p>© Ben2025</p></footer>
+    <footer>
+        <p>© Ben2025</p>
+    </footer>
 </body>
+
 </html>

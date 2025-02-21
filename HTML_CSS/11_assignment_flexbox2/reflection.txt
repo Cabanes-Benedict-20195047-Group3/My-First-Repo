@@ -1,0 +1,2 @@
+A little bit, I did struggle on how to center the text in left-panel, but then I try every different approach till I come up to width and added text-align to center, then it solved my problem. 
+So in this task, it took me more than 30mins.
