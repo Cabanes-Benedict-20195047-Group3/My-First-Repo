@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    background: white;
+    width: 450px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+h1 {
+    background: #1798fa;
+    font-size: 30px;
+    color: white;
+    margin: 15px 10px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    margin: 20px 10px 20px 10px;
+    border-radius: 8px;
+}
+
+#addTask {
+    font-size: 15px;
+    width: 100%;
+    padding: 9px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+}
+
+#addTaskButton {
+    width: 30%;
+    font-size: 15px;
+    padding: 8px 12px;
+    border: none;
+    background: #1798fa;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+nav {
+    margin: 20px 10px;
+    ul {
+        li {
+            list-style: none;
+            background: #daeff4;
+            margin-bottom: 15px;
+            font-size: 18px;
+            padding: 7px;
+            border-radius: 5px;
+        }
+        #compAssignment{
+            background: #a8d18e;
+            text-decoration: line-through;
+        }
+    }
+}
